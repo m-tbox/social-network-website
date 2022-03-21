@@ -19,7 +19,7 @@ type Props = {
 function Sidebar({ }: Props) {
   return (
     <div className="sidebar">
-      <LanguageIcon />
+      <LanguageIcon className="sidebar__logo" />
 
       <SidebarOption active Icon={HomeIcon} text="Home" />
       <SidebarOption Icon={SearchIcon} text="Explore" />

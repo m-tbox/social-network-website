@@ -2,5 +2,18 @@ body {
     --hover-color: #effae5;
 
     --app-theme-bg-color: #629D35;
+    --app-secondary-color: #ecdfcf;
+    --app-border-color: #b2da94;
     --app-theme-text-color: #fff;
+
+    --app-blue: #1C9BEF;
+}
+
+.app {
+    display: flex;
+    height: 100%;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
 }

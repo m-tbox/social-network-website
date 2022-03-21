@@ -2,9 +2,9 @@ import React from 'react';
 import { Container, Title } from "./StyledSidebarOption";
 
 type Props = {
-    text: String,
+    text: string,
     Icon: React.FC,
-    active?: Boolean
+    active?: boolean
 }
 
 function SidebarOption({ active, text, Icon }: Props) {
