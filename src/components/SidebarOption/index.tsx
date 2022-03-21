@@ -1,17 +1,18 @@
 import React from 'react';
-import { Section, Title } from "./StyledSidebarOption";
+import { Container, Title } from "./StyledSidebarOption";
 
 type Props = {
     text: String,
-    Icon: React.FC
+    Icon: React.FC,
+    active?: Boolean
 }
 
-function SidebarOption({ text, Icon }: Props) {
+function SidebarOption({ active, text, Icon }: Props) {
     return (
-        <Section>
+        <Container active={active}>
             <Icon />
             <Title>{text}</Title>
-        </Section>
+        </Container>
     )
 }
 

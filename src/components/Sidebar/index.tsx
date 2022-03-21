@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import LanguageIcon from '@mui/icons-material/Language';
 import HomeIcon from '@mui/icons-material/Home';
 import SearchIcon from '@mui/icons-material/Search';
@@ -8,11 +7,10 @@ import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import ListAltIcon from "@mui/icons-material/ListAlt";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import { Button } from '@mui/material';
 
 import SidebarOption from 'components/SidebarOption';
-// const Heading = styled.h1`
-//     background-color: pink
-// `
+import './style.css';
 
 type Props = {
 
@@ -21,12 +19,9 @@ type Props = {
 function Sidebar({ }: Props) {
   return (
     <div className="sidebar">
-      {/* <Heading>
-            Hello with TS and SC hh
-        </Heading> */}
       <LanguageIcon />
 
-      <SidebarOption Icon={HomeIcon} text="Home" />
+      <SidebarOption active Icon={HomeIcon} text="Home" />
       <SidebarOption Icon={SearchIcon} text="Explore" />
       <SidebarOption Icon={NotificationsNoneIcon} text="Notifications" />
       <SidebarOption Icon={MailOutlineIcon} text="Messages" />
@@ -34,6 +29,10 @@ function Sidebar({ }: Props) {
       <SidebarOption Icon={ListAltIcon} text="Lists" />
       <SidebarOption Icon={PermIdentityIcon} text="Profile" />
       <SidebarOption Icon={MoreHorizIcon} text="More" />
+
+      <Button variant="outlined" fullWidth className="sidebar__post">
+        Post
+      </Button>
 
     </div>
   )
