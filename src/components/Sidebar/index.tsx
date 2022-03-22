@@ -19,14 +19,13 @@ function Sidebar({ }: Props) {
     <Container>
       <LanguageIcon />
 
-      <SidebarOption active Icon={HomeIcon} text="Home" />
-      <SidebarOption Icon={SearchIcon} text="Explore" />
-      <SidebarOption Icon={NotificationsNoneIcon} text="Notifications" />
-      <SidebarOption Icon={MailOutlineIcon} text="Messages" />
-      <SidebarOption Icon={BookmarkBorderIcon} text="Bookmarks" />
-      <SidebarOption Icon={ListAltIcon} text="Lists" />
-      <SidebarOption Icon={PermIdentityIcon} text="Profile" />
-      <SidebarOption Icon={MoreHorizIcon} text="More" />
+      <SidebarOption Icon={HomeIcon} text="Home" navigateTo="/" />
+      <SidebarOption Icon={SearchIcon} text="Explore" navigateTo="/explore" />
+      <SidebarOption Icon={NotificationsNoneIcon} text="Notifications" navigateTo="/notifications" />
+      <SidebarOption Icon={MailOutlineIcon} text="Messages" navigateTo="/messages" />
+      <SidebarOption Icon={BookmarkBorderIcon} text="Bookmarks" navigateTo="/bookmark" />
+      <SidebarOption Icon={PermIdentityIcon} text="Profile" navigateTo="/profile" />
+      <SidebarOption Icon={MoreHorizIcon} text="More" navigateTo="/more" />
 
       <PostButton fullWidth>
         Post

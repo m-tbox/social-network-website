@@ -2,10 +2,12 @@ import { useEffect, useState } from 'react';
 import { Header, Container } from './StyledFeed';
 import PostBox from 'components/PostBox';
 import Post from 'components/Post';
-import { ref, db, onValue } from 'helpers/firebaseHelper';
+import { db, ref, onValue } from 'helpers/firebaseHelper';
 
 type Props = {
-    snapshot?: Object
+    snapshot?: Object,
+    posts: Array<any>,
+    showMessageInput?: boolean
 }
 
 type PKeys = {
@@ -18,30 +20,17 @@ type PKeys = {
 }
 
 
-function Feed({ }: Props) {
-    const [posts, setPosts] = useState([]);
-
-    useEffect(() => {
-        const postsData = ref(db, `posts/`);
-        onValue(postsData, (snapshot) => {
-            let data = snapshot.val();
-
-            console.log('DAtata', data);
-            setPosts(data);
-
-        });
-    }, []);
-
+function Feed({ posts, showMessageInput }: Props) {
     return (
         <Container>
             <Header>
                 Posts
             </Header>
 
-            <PostBox />
+            {showMessageInput && <PostBox />}
 
             {
-                posts.map((post: PKeys, index: number) =>
+                posts?.map((post: PKeys, index: number) =>
                     <Post
                         key={index}
                         displayName={post.displayName}
