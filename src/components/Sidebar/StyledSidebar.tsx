@@ -5,7 +5,7 @@ import World from '@mui/icons-material/Language';
 export const Container = styled.div`
     border-right: 1px solid var(--app-border-color);
     flex: 0.2;
-    min-width: 250px;
+    /* min-width: 250px; */
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;

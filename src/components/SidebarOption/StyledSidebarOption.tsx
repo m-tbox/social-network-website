@@ -26,4 +26,8 @@ export const Title = styled.h2`
   font-weight: 800;
   font-size: 20px;
   margin-right: 20px;
+
+  @media (max-width: 700px) {
+    display: none;
+  }
 `;

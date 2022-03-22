@@ -3,6 +3,10 @@ import Search from '@mui/icons-material/Search';
 
 export const Container = styled.div`
   flex: 0.3;
+  
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 export const WidgetsInput = styled.div`

@@ -14,6 +14,10 @@ export const Container = styled.div`
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+
+  @media (max-width: 998px) {
+    flex: 0.8;
+  }
 `;
 
 export const Header = styled.div`
