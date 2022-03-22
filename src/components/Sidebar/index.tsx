@@ -1,4 +1,3 @@
-import LanguageIcon from '@mui/icons-material/Language';
 import HomeIcon from '@mui/icons-material/Home';
 import SearchIcon from '@mui/icons-material/Search';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
@@ -7,10 +6,9 @@ import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import ListAltIcon from "@mui/icons-material/ListAlt";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
-import { Button } from '@mui/material';
 
 import SidebarOption from 'components/SidebarOption';
-import './style.css';
+import { Container, LanguageIcon, PostButton } from './StyledSidebar';
 
 type Props = {
 
@@ -18,8 +16,8 @@ type Props = {
 
 function Sidebar({ }: Props) {
   return (
-    <div className="sidebar">
-      <LanguageIcon className="sidebar__logo" />
+    <Container>
+      <LanguageIcon />
 
       <SidebarOption active Icon={HomeIcon} text="Home" />
       <SidebarOption Icon={SearchIcon} text="Explore" />
@@ -30,11 +28,11 @@ function Sidebar({ }: Props) {
       <SidebarOption Icon={PermIdentityIcon} text="Profile" />
       <SidebarOption Icon={MoreHorizIcon} text="More" />
 
-      <Button variant="outlined" fullWidth className="sidebar__post">
+      <PostButton fullWidth>
         Post
-      </Button>
+      </PostButton>
 
-    </div>
+    </Container>
   )
 }
 

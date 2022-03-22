@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  flex: 0.4;
+  flex: 0.5;
   border-right: 1px solid var(--app-border-color);
   min-witdh: fit-content;
   overflow-y: scroll;

@@ -1,6 +1,5 @@
-import { Avatar, Button } from "@mui/material"
-import { Container, Form, Input, InputContainer } from "./StyledPostBox"
-import './style.css';
+import { Avatar } from "@mui/material"
+import { Container, Form, Input, InputContainer, PostBoxButton } from "./StyledPostBox"
 
 type Props = {}
 
@@ -20,9 +19,9 @@ function PostBox({ }: Props) {
                     placeholder="Enter image URL"
                     padding={'10px'}
                 />
-                <Button className="postbox__button">
+                <PostBoxButton>
                     Post
-                </Button>
+                </PostBoxButton>
             </Form>
         </Container>
     )

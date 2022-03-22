@@ -38,13 +38,14 @@ function Post({ displayName, username, verified, text, image, avatar }: Props) {
                         <h3>
                             {displayName} {" "}
                             <PostHeaderSpan>
-                                <VerifiedIcon /> @ {username}
+                                {verified && <VerifiedIcon />}
+                                <p>@{username}</p>
                             </PostHeaderSpan>
                         </h3>
                     </PostHeaderText>
                     <PostHeaderDescription>
                         <p>
-                            I can do this
+                            {text}
                         </p>
                     </PostHeaderDescription>
                 </PostHeader>

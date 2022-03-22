@@ -14,7 +14,7 @@ export const AvatarContainer = styled.div`
 
 export const PostBody = styled.div`
     flex: 1;
-    padding: 10px;
+    padding: 10px 30px 10px 10px;
 `;
 
 export const PostHeader = styled.div`
@@ -25,12 +25,19 @@ export const PostHeaderSpan = styled.span`
   font-weight: 600;
   font-size: 12px;
   color: gray;
+
+  display: flex;
+  > p {
+    margin-left: 10px;
+  }
 `;
 
 export const PostHeaderText = styled.div`
     > h3 {
         font-size: 15px;
         margin-bottom: 5px;
+        display: flex;  
+        align-items: center;
     }
 `;
 
@@ -51,6 +58,7 @@ export const PostFooter = styled.div`
 `;
 
 export const VerifiedIcon = styled(Verified)`
-    font-size: 14px;
+    font-size: 14px !important;
     color: var(--app-blue);
+    margin-left: 3px;
 `;

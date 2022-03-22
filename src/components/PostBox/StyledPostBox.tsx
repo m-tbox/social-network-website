@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Button } from '@mui/material';
 
 type InputProps = {
     padding?: String,
@@ -27,4 +28,17 @@ export const Input = styled.input<InputProps>`
     ${({ fontSize }) => fontSize && `font-size: ${fontSize} !important;`}
     border: none;
     ${({ padding }) => padding && `padding: ${padding};`}
+`;
+
+export const PostBoxButton = styled(Button)`
+    background-color: var(--app-theme-bg-color) !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 900 !important;
+    text-transform: inherit !important;
+    border-radius: 30px !important;
+    width: 80px;
+    height: 40px !important;
+    margin-top: 20px !important;
+    margin-left: auto !important;
 `;
