@@ -1,3 +1,13 @@
+# Project Description
+
+Social Media website frontend made using follwoing:
+
+1. Typescript
+2. Styled Components
+3. Data stored in Firebase and fetched from there
+
+### Code is deployed on firebase
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
